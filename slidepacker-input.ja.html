@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    lang="ja" xml:lang="ja">
+<head>
+<title>スライドのパッケージ化</title>
+<link rel="stylesheet" href="/www/style/html/xhtml" media="all" />
+<link rev="made" href="mailto:w@suika.fam.cx" />
+<meta name="author" content="わかば" />
+</head>
+<body>
+<h1>スライドのパッケージ化</h1>
+
+<form action="slidepacker.cgi" method="get" accept-charset="utf-8"
+    enctype="application/x-www-form-urlencoded">
+
+<dl>
+<dt>スライドの <abbr lang="en" xml:lang="en" 
+    title="Uniform Resource Identifiers">URI</abbr> 参照</dt>
+	<dd><input type="text" size="120" name="start"
+                value="http://suika.fam.cx/www/markup/slide/doc/hsml-intro" /></dd>
+	<dd>
+	<div class="note memo">
+	<p>現時点では <code>suika.fam.cx</code>, <abbr lang="en" xml:lang="en"
+	    title="Hypertext Transfer Protocol">HTTP</abbr> 
+	のみ使用可能です。</p>
+	</div>
+	</dd>
+<dt>パッケージの媒体型</dt>
+	<dd><code class="MIME" lang="en" xml:lang="en">application/zip</code></dd>
+<dt>作成</dt>
+	<dd><input type="submit" value="スライドのパッケージ化" /></dd>
+	<dd>
+	<div class="note memo">
+        <p>事前に許諾を得た人のみ利用できます。</p>
+        </div>
+	<div class="note memo">
+	<p>少々時間が掛かります。</p>
+	</div>
+	</dd>
+</dl>
+
+</form>
+
+<div class="section">
+<h2>解説</h2>
+
+<p>
+<a href="/www/markup/slide/"><abbr lang="en" xml:lang="en"
+    title="Hyperslide Markup Language">HSML</abbr></a>
+プレゼンテーション・スライドの本体とそこから参照されているスタイル・シート一式
+(<abbr lang="en" xml:lang="en" title="Cascading Style Sheets">CSS</abbr>,
+<abbr lang="en" xml:lang="en" title="XML Binding Language">XBL</abbr> 1,
+<abbr lang="en" xml:lang="en" title="HTML Components">HTC</abbr>)
+を <span lang="en" xml:lang="en">zip</span> 形式で1つにまとめます。
+</p>
+
+<div class="note memo">
+<p>
+実際には対象となる文書を単純な文字列とみなして、属性やスタイル・シート内の
+<abbr lang="en" xml:lang="en" title="Uniform Resource Identifiers">URI</abbr> 
+参照のようなものを探して適当に置き換えています。
+つまり、あらゆる場合に正確に対応できるわけではありません。
+</p>
+</div>
+
+<p>
+アクセス間隔やパッケージ化のための負荷などの問題があるので、
+現時点で使用できる対象を <code>suika.fam.cx</code>
+に限定しています。更に、予め登録された人しか利用できません。
+利用を希望される方は<a href="/~wakaba/who?" rev="made"
+>わかば</a>までご連絡下さい。
+</p>
+</div>
+
+<div class="footer">
+<div class="navigation">
+[<a href="/">/</a>]
+[<a href="/~wakaba/"><abbr title="わかば">和</abbr></a>
+<a href="/~wakaba/archive2/">保管庫2</a>
+<a href="/~wakaba/archive2/2005/">2005年</a>]
+[<a href="/www/markup/slide/"><abbr lang="en" xml:lang="en"
+    title="Hyperslide Markup Language">HSML</abbr></a>]
+</div>
+<div class="update" lang="en" xml:lang="en">$Date: 2005/04/23 11:39:26 $</div>
+</div>
+
+</body>
+</html>
